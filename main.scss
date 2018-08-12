@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	margin: 0px; 
+	box-sizing: border-box;
+	background-color: #fff;
+}
+
+.content {
+	margin-left: 210px;
+	overflow-x: hidden;
+}
+
+/* 
+	Navigation Styling
+		left aligned on regular viewports
+		for now, nav will be fixed at top under media
+			query
+		in the future, i plan to use js to add toggle
+*/
+
+.nav {
+	position: fixed;
+	height: 100%;
+	width: 190px;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	overflow-x: hidden;
+	
+		.nav-menu {
+			list-style: none;
+			padding: 10px 20px;
+		}
+
+		.nav-link, h3 a {
+			text-decoration: none;
+			color: #000;
+		}
+
+		.nav-menu li {
+			padding-bottom: 15px;
+		}
+
+		.nav-link:hover {
+			border-bottom: 1.3px solid #000;
+		}
+
+		h3 {
+			text-align: center;
+		}
+}
+@media screen and (max-width:460px) {
+		.nav {
+			font-size: .7em;
+			width: 150px;
+		}
+	
+	.content {
+		margin-left: 150px;
+	}
+}
+
+.footer {
+	font-size: .6em;
+	text-align: center;
+	a {
+		text-decoration: none;
+		color: #000;
+	}
+	
+	a:hover {
+			border-bottom: 1px solid #000;
+		}
+}
+
+
